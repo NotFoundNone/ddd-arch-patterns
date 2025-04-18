@@ -1,4 +1,4 @@
-package HexagonalArchitecture.domain.service;
+package HexagonalArchitecture.adapters.secondary;
 
 import HexagonalArchitecture.domain.port.SupplierNotificationService;
 

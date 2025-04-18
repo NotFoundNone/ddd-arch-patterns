@@ -3,7 +3,7 @@ package HexagonalArchitecture;
 import HexagonalArchitecture.adapters.primary.ConsoleSupplyOrderAdapter;
 import HexagonalArchitecture.adapters.secondary.InMemorySupplyOrderRepository;
 import HexagonalArchitecture.domain.port.SupplyOrderUseCase;
-import HexagonalArchitecture.domain.service.DummySupplierNotificationService;
+import HexagonalArchitecture.adapters.secondary.DummySupplierNotificationService;
 import HexagonalArchitecture.domain.service.SupplyOrderServiceImpl;
 
 public class Main {
