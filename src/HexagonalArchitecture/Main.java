@@ -2,7 +2,7 @@ package HexagonalArchitecture;
 
 import HexagonalArchitecture.adapters.primary.ConsoleSupplyOrderAdapter;
 import HexagonalArchitecture.adapters.secondary.InMemorySupplyOrderRepository;
-import HexagonalArchitecture.domain.port.SupplyOrderUseCase;
+import HexagonalArchitecture.domain.port.primary.SupplyOrderUseCase;
 import HexagonalArchitecture.adapters.secondary.DummySupplierNotificationService;
 import HexagonalArchitecture.domain.service.SupplyOrderServiceImpl;
 

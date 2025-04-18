@@ -3,7 +3,7 @@ package HexagonalArchitecture.adapters.primary;
 import HexagonalArchitecture.domain.model.Product;
 import HexagonalArchitecture.domain.model.SupplyItem;
 import HexagonalArchitecture.domain.model.SupplyOrder;
-import HexagonalArchitecture.domain.port.SupplyOrderUseCase;
+import HexagonalArchitecture.domain.port.primary.SupplyOrderUseCase;
 
 import java.util.ArrayList;
 import java.util.List;

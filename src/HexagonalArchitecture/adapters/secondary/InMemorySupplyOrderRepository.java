@@ -1,7 +1,7 @@
 package HexagonalArchitecture.adapters.secondary;
 
 import HexagonalArchitecture.domain.model.SupplyOrder;
-import HexagonalArchitecture.domain.port.SupplyOrderRepository;
+import HexagonalArchitecture.domain.port.secondary.SupplyOrderRepository;
 
 import java.util.HashMap;
 import java.util.Map;

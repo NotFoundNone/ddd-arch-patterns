@@ -3,9 +3,9 @@ package HexagonalArchitecture.domain.service;
 import HexagonalArchitecture.domain.model.OrderStatus;
 import HexagonalArchitecture.domain.model.SupplyItem;
 import HexagonalArchitecture.domain.model.SupplyOrder;
-import HexagonalArchitecture.domain.port.SupplierNotificationService;
-import HexagonalArchitecture.domain.port.SupplyOrderRepository;
-import HexagonalArchitecture.domain.port.SupplyOrderUseCase;
+import HexagonalArchitecture.domain.port.secondary.SupplierNotificationService;
+import HexagonalArchitecture.domain.port.secondary.SupplyOrderRepository;
+import HexagonalArchitecture.domain.port.primary.SupplyOrderUseCase;
 
 import java.util.List;
 

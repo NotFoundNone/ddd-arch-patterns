@@ -1,6 +1,6 @@
 package HexagonalArchitecture.adapters.secondary;
 
-import HexagonalArchitecture.domain.port.SupplierNotificationService;
+import HexagonalArchitecture.domain.port.secondary.SupplierNotificationService;
 
 public class DummySupplierNotificationService implements SupplierNotificationService {
     @Override

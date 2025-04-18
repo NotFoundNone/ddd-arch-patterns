@@ -1,4 +1,4 @@
-package HexagonalArchitecture.domain.port;
+package HexagonalArchitecture.domain.port.primary;
 
 import HexagonalArchitecture.domain.model.SupplyItem;
 import HexagonalArchitecture.domain.model.SupplyOrder;
