@@ -15,7 +15,6 @@ public class InventoryService {
         this.repository = repository;
     }
 
-    // Добавление нового продукта или пополнение существующего
     public void addProduct(String id, String name, LocalDate expiryDate, int criticalLevel, int quantity) {
         Product product = new Product(id, name, expiryDate, criticalLevel);
         InventoryItem item = repository.findByProductId(id);
@@ -28,7 +27,6 @@ public class InventoryService {
         }
     }
 
-    // Списание продуктов при использовании для приготовления блюд
     public boolean useProduct(String productId, int quantity) {
         InventoryItem item = repository.findByProductId(productId);
         if (item != null && item.reduceQuantity(quantity)) {
@@ -38,7 +36,6 @@ public class InventoryService {
         return false;
     }
 
-    // Списание просроченных продуктов (устанавливаем количество в 0)
     public void writeOffExpiredProducts(LocalDate currentDate) {
         List<InventoryItem> allItems = repository.findAll();
         for (InventoryItem item : allItems) {
@@ -49,7 +46,6 @@ public class InventoryService {
         }
     }
 
-    // Корректировка запасов (например, после проведения инвентаризации)
     public void adjustInventory(String productId, int newQuantity) {
         InventoryItem item = repository.findByProductId(productId);
         if (item != null) {
@@ -58,12 +54,10 @@ public class InventoryService {
         }
     }
 
-    // Получение всех позиций инвентаря
     public List<InventoryItem> getAllInventory() {
         return repository.findAll();
     }
 
-    // Получение списка продуктов с критическим уровнем запасов
     public List<InventoryItem> getCriticalProducts() {
         List<InventoryItem> criticalItems = new ArrayList<>();
         List<InventoryItem> allItems = repository.findAll();
